@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Weather App</title>
+
+    <link href="style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+    <div id="root" class="container-fluid card" style= "width:18rem;">
+        <form>
+            <div>
+                <label >Enter a location:</label>
+                <input id='weather' type='text' name='getWeather' 
+                placeholder="Enter the Name of Place" pattern="[A-Za-z]+" required/>
+            </div>
+            <div>
+                <button id='submit' >Submit</button>
+            </div>
+            <div>
+                Temperature for <p id="city"></p>: <p id="output"></p>
+
+            </div>
+            
+            
+        </form>
+    </div>
+
+
+    <script src="index.js"></script>
+  </body>
+</html>
